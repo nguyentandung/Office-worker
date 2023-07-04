@@ -8,28 +8,29 @@
 import UIKit
 
 class SplashVC: UIViewController {
+    
+    let viewModel = SplashVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("Splash Screen viewDidLoad")
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Splash Screen DidAppear")
+        viewModel.checkAuthUser { [weak self] auth in
+            auth ? self?.moveToHomescreen() : self?.moveToLoginScreen()
+        }
     }
-
+    
+    func moveToLoginScreen() {
+        let vc = LoginVC(nibName: "LoginVC", bundle: nil)
+        AppHelper().changeRootViewController(to: vc)
+    }
+    
+    func moveToHomescreen() {
+        
+    }
+    
 }

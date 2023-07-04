@@ -1,18 +1,18 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  Office-Worker
 //
-//  Created by Nguyen Tan Dung on 20/06/2023.
+//  Created by Nguyen Tan Dung on 07/04/23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("ViewController viewDidLoad")
-    }
-}
 
+        // Do any additional setup after loading the view.
+    }
+
+}

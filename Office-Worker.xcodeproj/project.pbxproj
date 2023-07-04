@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5A2BCA2A5400F700E2B248 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5A2BC82A5400F700E2B248 /* LoginVC.swift */; };
+		CD5A2BCB2A5400F700E2B248 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5A2BC92A5400F700E2B248 /* LoginVC.xib */; };
+		CD5A2BCD2A54011B00E2B248 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5A2BCC2A54011B00E2B248 /* LoginVM.swift */; };
+		CD5A2BCF2A54043C00E2B248 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5A2BCE2A54043C00E2B248 /* ViewExtension.swift */; };
+		CD5A2BD12A54081C00E2B248 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5A2BD02A54081C00E2B248 /* AppHelper.swift */; };
 		D40CD4DC2A4197B2007976C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CD4DB2A4197B2007976C5 /* AppDelegate.swift */; };
 		D40CD4DE2A4197B2007976C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CD4DD2A4197B2007976C5 /* SceneDelegate.swift */; };
 		D40CD4E02A4197B2007976C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CD4DF2A4197B2007976C5 /* ViewController.swift */; };
@@ -42,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD5A2BC82A5400F700E2B248 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CD5A2BC92A5400F700E2B248 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		CD5A2BCC2A54011B00E2B248 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		CD5A2BCE2A54043C00E2B248 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		CD5A2BD02A54081C00E2B248 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		D40CD4D82A4197B2007976C5 /* Office-Worker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office-Worker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40CD4DB2A4197B2007976C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D40CD4DD2A4197B2007976C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD5A2BC62A5400E000E2B248 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CD5A2BC82A5400F700E2B248 /* LoginVC.swift */,
+				CD5A2BC92A5400F700E2B248 /* LoginVC.xib */,
+				CD5A2BCC2A54011B00E2B248 /* LoginVM.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		D40CD4CF2A4197B2007976C5 = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +168,7 @@
 		D40CD50F2A419C65007976C5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D4D484352A41A54D00F84E12 /* Login */,
+				CD5A2BC62A5400E000E2B248 /* Login */,
 				D4D484342A41A54300F84E12 /* Splash */,
 			);
 			path = Scenes;
@@ -158,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				D4D484482A41B33C00F84E12 /* ColorExtension.swift */,
+				CD5A2BCE2A54043C00E2B248 /* ViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -166,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				D4D484462A41B26000F84E12 /* ColorHelper.swift */,
+				CD5A2BD02A54081C00E2B248 /* AppHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -178,13 +200,6 @@
 				D4D4843F2A41A5AF00F84E12 /* SplashVC.xib */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		D4D484352A41A54D00F84E12 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5A2BCB2A5400F700E2B248 /* LoginVC.xib in Resources */,
 				D40CD4EB2A4197B4007976C5 /* LaunchScreen.storyboard in Resources */,
 				D4D484412A41A5AF00F84E12 /* SplashVC.xib in Resources */,
 				D40CD4E82A4197B4007976C5 /* Assets.xcassets in Resources */,
@@ -323,7 +339,11 @@
 				D4D4843D2A41A59E00F84E12 /* SplashVM.swift in Sources */,
 				D40CD4DC2A4197B2007976C5 /* AppDelegate.swift in Sources */,
 				D4D484492A41B33C00F84E12 /* ColorExtension.swift in Sources */,
+				CD5A2BCD2A54011B00E2B248 /* LoginVM.swift in Sources */,
 				D40CD4DE2A4197B2007976C5 /* SceneDelegate.swift in Sources */,
+				CD5A2BCF2A54043C00E2B248 /* ViewExtension.swift in Sources */,
+				CD5A2BD12A54081C00E2B248 /* AppHelper.swift in Sources */,
+				CD5A2BCA2A5400F700E2B248 /* LoginVC.swift in Sources */,
 				D40CD4E62A4197B2007976C5 /* Office_Worker.xcdatamodeld in Sources */,
 				D4D484472A41B26000F84E12 /* ColorHelper.swift in Sources */,
 				D4D484402A41A5AF00F84E12 /* SplashVC.swift in Sources */,
@@ -506,7 +526,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88QJ4AUY7L;
+				DEVELOPMENT_TEAM = 92P29782V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Office-Worker/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Office Worker";
@@ -521,7 +541,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vn.edfore.officeworker.com;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.edfore.officeworker.com.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -540,7 +560,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88QJ4AUY7L;
+				DEVELOPMENT_TEAM = 92P29782V7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Office-Worker/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Office Worker";
@@ -555,7 +575,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vn.edfore.officeworker.com;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.edfore.officeworker.com.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
